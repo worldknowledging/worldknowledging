@@ -1,0 +1,17 @@
+@media screen and (max-width:375px) {
+    nav a{
+        font-size:12px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    nav a{
+        font-size:12px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    nav a{
+        font-size:12px;
+    }
+}

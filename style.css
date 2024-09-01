@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+
+/*body{
+    font-family:"Nunito Sans", sans-serif;
+}*/
+
+head{
+    font-family: "PT Sans", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Transition*/
+a. btn{
+    transition:all 30ms ease;
+}
+
+/*Desktop nav*/
+
+nav, .nav-links{
+    display: flex;
+}
+
+nav{
+    justify-content: space-around , flex-start;
+    align-items: center;
+    height:17vh;
+    gap:27rem;
+    margin-left:5rem;
+    
+}
+
+.logo{
+    top:1rem;
+    margin-left:0;
+}
+
+.text-p1{
+    color:#000;
+    font-size:15px;
+    text-align: center;
+    margin-top:0;
+    font-weight: 500;
+}
+.nav-links{
+    list-style: none;
+    gap:2rem;
+    font-size:20px;
+}
+
+a{
+    color:black;
+    text-decoration-color:white;
+}
+
+a:hover{
+    color:#003366;
+    text-decoration:none;
+    text-underline-offset:1rem;
+    text-decoration-color:rgb(181,181,181);
+}
+
+/*HAMBURGER MENU*/
+
+#hamburger-nav{
+    display:none;
+    height: 45vh;
+    position: relative;
+    align-items: center;
+    gap:40rem;
+}
+
+.hamburger-menu{
+    position:relative;
+    display:inline-block;
+}
+
+.hamburger-icon{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height:24px;
+    width:30px;
+    cursor:pointer;
+
+}
+
+.hamburger-icon span{
+    width:100%;
+    height: 2px;
+    background-color: black;
+    transition:all 0.3 ease-in-out;
+
+}                 
+
+.menu-links{
+    position:absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width:fit-content;
+    max-height:0;
+    height:150px;
+    overflow:hidden;
+    transition:all 0.3 ease-in-out; /the background that contains the links/
+    padding: 1rem; /* Add padding for spacing */
+    border-radius: 8px; /* Optional: for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: for a subtle shadow */
+}
+
+.menu-links a {
+    display:block;
+    padding:5px 1rem;
+    text-align:center;
+    font-size:11px;
+    color:black;
+    text-decoration:none;
+    transition:all 0.3 ease-in-out;
+  
+}
+
+.menu-links li{
+    list-style:none;
+   
+}
+
+.menu-links.open{
+    max-height:fit-content; /or 300px/
+    
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px,5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+   opacity: 0;
+}
+
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+                                      /idk the use of this/
+.hamburger-icon span:first-child{
+    transform:none;
+}
+
+.hamburger-icon span:first-child{
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child{
+    transform:none;
+}
+/*sections*/
+section{
+    height:80vh;
+    padding-top:4vh;
+   /* margin:0 10rem;*/
+    box-sizing:border-box;
+    min-height:fit-content;
+    margin-bottom: 10rem;
+}
+
+/*home section*/
+#home{
+    display:flex;
+    justify-content: center;
+    height:80vh;
+    position:relative;
+ }
+
+.homesection{
+    width: 90%;
+    height: 100%;
+    align-items: center;
+}
+
+.home-pic{
+    display: flex;
+    margin-left: 0;
+    align-self: center;
+}
+
+.btn-container{
+    transition: all 300ms ease;
+    font-weight: 600;
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    width:100px;
+    height:40px;
+    cursor:pointer;
+    margin-top:2rem;
+}
+
+.btn-container a:hover{
+    color:#d4af37;
+    background-color: #003366;
+    border: #003366;
+}
+
+.btn-container a{
+    color:white;
+    text-decoration:none;
+}
+
+/*latest books section*/
+
+#latest-books-reviews {
+    padding:0rem;
+    height: 80vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+    width: 90%;
+    margin-left: 4rem;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    font-family: 'PT serif' sans-serif;
+    font-size: 70px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-gap: 1.5rem; /* Space between items */
+    width: 100%;
+   /* max-width: 1200px; /* Adjust max-width as needed */
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*background: #fff; /* White background for the placeholder */
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 2rem; /* Space below each placeholder */
+    cursor: pointer;
+}
+
+.review-image {
+    width: 100%;
+    height: 250px; /* Adjust height as needed */
+    /*background-color: #e0e0e0; /* Light gray placeholder color */
+}
+
+.review-title {
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Libre Baskerville' sans-serif;
+}
+
+/*.placeholder {
+    background-color: #e0e0e0; /* Light gray placeholder color */
+
+
+.placeholder-text {
+   /*background-color:white; /* Light gray placeholder color */
+    height: 20px;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    width: 60%; /* Adjust width as needed */
+}
+
+.first-review-cover{
+    width: 100%;
+    height:100%;
+    border-radius: 8px;
+}
+
+
+/* Adjustments to ensure the layout uses the entire height of 200vh */
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .reviews-container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+/*Recommandation section */
+#recommendations {
+    padding: 2rem;
+    height: 80vh; /* Set the height to 80vh */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align the title to the start */
+    margin-bottom:10rem; /* Space below the section */
+}
+
+.Rh2{
+    margin-bottom: 1.5rem; /* Space below the section title */
+    align-self: flex-start; /* Ensure title aligns to the start */
+    font-family: 'PT serif' sans-serif;
+    font-size: 70px;
+    font-weight: 200;
+}
+
+.recommendations-container {
+    display: flex;
+    justify-content: space-between; /* Space between the squares */
+    width: 100%;
+    height: calc(80vh - 4rem); /* Adjust height to fit in 80vh with padding */
+    gap: 1rem;
+}
+
+
+
+.recommendation-image {
+    width: 100%;
+    height: 70%; /* Adjust height as needed */
+}
+
+.recommendation-title {
+    padding: 1rem;
+    text-align: center;
+}
+
+.first-recommandation-cover{
+    width:100%;
+    height:100%;
+    cursor:pointer;
+}
+/*about*/
+
+.aboutsection{
+    width: 100%;
+    height:80vh;
+    align-items: center;
+}
+
+.about-pic{
+    display: flex;
+    margin-left: 0;
+    align-self: center;
+    margin-left:9rem;
+}
+
+/*.Rh3{
+    margin-top:4rem;
+}*/
+
+/*contact section*/
+#contact {
+    height: 50vh;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center align children horizontally */
+    justify-content: center; /* Center align children vertically */
+    position: relative;
+}
+
+.contact-container {
+    display: flex;
+    height: 15vh;
+    width: 100%; /* Adjusted to be responsive */
+    background-color: #003366;
+    border-radius: 2rem;
+    align-items: center; /* Center align content vertically */
+    justify-content: center; /* Center align content horizontally */
+    position: absolute;
+    top: 0;
+}
+
+.contact-container h2 {
+    color: white;
+    font-family: 'PT Serif', serif; /* Fixed font-family declaration */
+    font-size: 70px;
+    font-weight: 200;
+    margin: 0; /* Remove default margins */
+}
+
+.contact-email-address {
+    margin-top: 20vh; /* Adjust spacing from the top of the section */
+    text-align: center; /* Center align the email address */
+}
+
+.contact-email-address a {
+    color: #003366; /* Color for the email link */
+    text-decoration: none; /* Remove underline from the link */
+    font-size: 24px; /* Adjust font size as needed */
+    font-family: 'PT Serif', serif; /* Consistent font family */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.contact-email-address a:hover {
+    color: #001f3f; /* Darker color on hover */
+}
+
+
+
+/*footer*/
+#contact-footer {
+    background-color: #000; /* Black background */
+    height: 20vh; /* Height of the footer */
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    padding: 2rem; /* Add some padding */
+    bottom:0;
+    flex-direction: column;
+    gap:3rem;
+    box-sizing: border-box;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2rem; /* Space between navigation items */
+   
+}
+
+.footer-nav a {
+    color: #fff; /* White text color */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 18px; /* Font size for navigation items */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+   
+}
+
+.footer-nav a:hover {
+    color: #ddd; /* Light gray on hover */
+}
+
+p{
+    color:white;
+    font-size: 20px;
+    text-align:center;
+}
+
+.contact-email-adress{
+    display: flex;
+    position:absolute;
+    text-align: center;
+    justify-content: center;
+    top:20rem;
+    font-size: 25px;
+}
+
+/* Other existing styles */
+
+/* Books Menu Styles */
+.books-menu {
+    position: relative;
+  }
+  
+  .books-submenu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    list-style: none;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 100%;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .books-submenu li {
+    margin: 0;
+  }
+  
+  .books-submenu a {
+    color: #003366;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+    transition: all ease 0.3s;
+  }
+  
+  .books-submenu a:hover {
+    background: #f0f0f0;
+  }
+  
+  /*Reviews page */
+  
+  h3{
+    font-size:100px;
+    font-family: 'PT-serif' sans-serif;
+    font-weight: 600;
+    color: white;
+  }
