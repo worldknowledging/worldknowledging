@@ -46,4 +46,4 @@ This project is licensed under the MIT License.
 
 Contact
 For any inquiries or feedback, please contact us at worldknowledging@gmail.com.
-URL OF THE BLOG : worldknowledging.github.io
+URL OF THE BLOG : worldknowledging.github.io.
