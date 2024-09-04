@@ -68,10 +68,15 @@ main {
     margin-bottom: 20px;
 }
 
-.pinterest-pin, .youtube-video {
-    flex: 1;
+.pinterest-pin {
     padding: 10px;
     max-width:60%;
+}
+
+.youtube-video {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .pinterest-pin img {
@@ -122,4 +127,9 @@ p{
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 20px;
     color: black;
+}
+
+
+    #video-section{
+    margin-bottom: 200px;
 }
