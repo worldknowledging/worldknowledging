@@ -284,7 +284,6 @@ section {
 
 .about-pic {
   border-radius: 2rem;
-  display: flex;
 }
 .details-container {
   padding: 1.5rem;
@@ -294,6 +293,7 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);*/
   text-align: center;
+  cursor: pointer;
 }
 
 .section-container {
@@ -447,6 +447,11 @@ h1{
   margin-bottom: 2rem;
 }
 
+main section{
+  margin: 0;
+  height: fit-content;
+}
+
 /*books menu*/
 .books-menu {
   position: relative;
@@ -479,4 +484,6 @@ h1{
 .books-submenu a:hover {
   background: #f0f0f0;
 }
+
+
 
