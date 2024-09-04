@@ -1,874 +1,107 @@
-body{
-    width:100%;
+@media screen and (max-width: 1400px) {
+    #home {
+      height: 83vh;
+      margin-bottom: 6rem;
+    }
+    .about-containers {
+      flex-wrap: wrap;
+    }
+    #contact,
+    #recommendations {
+      height: fit-content;
+    }
   }
   
-@media screen and (max-width:1200px){
-    #desktop-nav{
-          display: none;
+  @media screen and (max-width: 1200px) {
+    #desktop-nav {
+      display: none;
+    }
+    #hamburger-nav {
+      display: flex;
+    }
+    #latestreviews,
+    .experience-details-container {
+      margin-top: 2rem;
+    }
+    #home,
+    .section-container {
+      display: block;
+    }
+    .arrow {
+      display: none;
+    }
+    section,
+    .section-container {
+      height: fit-content;
+    }
+    section {
+      margin: 0 5%;
+    }
+    .section__pic-container {
+      width: 275px;
+      height: 275px;
+      margin: 0 auto 2rem;
+    }
+    .about-containers {
+      margin-top: 0;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #contact,
+    footer {
+      height: 40vh;
+    }
+    #home {
+      height: 83vh;
+      margin-bottom: 0;
+    }
+    article {
+      font-size: 1rem;
+    }
+    footer nav {
+      height: fit-content;
+      margin-bottom: 2rem;
+    }
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+      flex-wrap: wrap;
+    }
+    .contact-info-container {
+      margin: 0;
+    }
+    .contact-info-container p,
+    .nav-links li a {
+      font-size: 1rem;
+    }
+    .experience-sub-title {
+      font-size: 1.25rem;
+    }
+    .logo {
+      font-size: 1.5rem;
+    }
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+    .section__pic-container {
+      width: auto;
+      height: 46vw;
+      justify-content: center;
+    }
+    .section__text__p2 {
+      font-size: 1.25rem;
+    }
+    .title {
+      font-size: 2rem;
+    }
+    .text-container {
+      text-align: justify;
     }
 
-    #hamburger-nav{
-        display: flex;
-  }
-
-  body{
-    width:100%;
-  }
-
-  .home-pic{
-    width:90%;
-    margin-top:50px;
-  }
-  
-  .btn-container{
-    display:none;
-  }
-
-  .about-pic{
-    width:80%;
-  }
-
-  .reviews-container{
-    width:100%;
-  }
-
-  .recommendations-container{
-    width:100%;
-  }
-
-  footer{
-    width:100%;
-  }
-
-  #latest-books-reviews{
-    margin-top:300px;
-  }
-  #recommendations{
-    margin-top:500px;
-  }
-
-  #about,#contact{
-    margin-top:100px;
-  }
-  #hamburger-nav{
-    gap:40rem;
-  }
-  
-}
-
-@media screen and (max-width:600px){
-    #desktop-nav{
-          display: none;
+    nav{
+      font-size: 0.5rem;
     }
-
-  #hamburger-nav{
-        display: flex;
   }
-
-  body{
-    width:100%;
-    align-items: center;
-  }
-
-  .home-pic{
-    width:90%;
-  }
-  
-  .btn-container{
-    display:none;
-  }
-
-  .about-pic{
-    width:90%;
-    position: absolute;
-    margin-left:2rem;
-    margin-top:2rem;
-  }
-
-  .reviews-container{
-    width:80%;
-    margin-left:0rem;
-    position: absolute;
-    left:1rem;
-    margin-top: 1500px;
-  }
-
-  .recommendations-container{
-    width:90%;
-    margin-top:1rem;
-
-  }
-
-  footer{
-    width:90%;
-  }
-
-  #latest-books-reviews{
-    margin-top:0;
-    position: relative;
-  }
-  #recommendations{
-    margin-top:1600px;
-    position: relative;
-  }
-
-  #about{
-    margin-top:100px;
-    position: relative;
-  }
-
-  #contact{
-   margin-top:150px;
-  }
-
-  #hamburger-nav{
-    gap:10rem;
-  }
-
-  h2{
-    font-size:30px;
-    margin-left: 0;
-    top: 0;
-    position: absolute;
-    left:7rem;
-  }
-
-  .Rh2{
-    font-size:30px;
-    margin-left: 0;
-    top: 0;
-    position: absolute;
-    left: 2rem;
-    margin-bottom:3rem;
-  }
-
-  .contact-container{
-    width:90%;
-  }
-
-  .first-recommendation-cover{
-    height:200px;
-    width: 200px;
-  }
-
-  .Rh3{
-    font-size:30px;
-    margin-left: 0;
-    top: 0;
-    position: absolute;
-    left: 2rem;
-  }
-
-
-  .contact-container{
-    text-align: center;
-  }
-
-  h3{
-    font-size:90px;
-    font-family: 'PT-serif' sans-serif;
-    font-weight: 600;
-    color: white;
-  }
-
-}
-
-@media screen and (max-width:300px){
-  #desktop-nav{
-        display: none;
-  }
-
-  #hamburger-nav{
-      display:flex;
-      gap:7rem;
-      /*position: absolute;*/
-      margin-left:0;
-}
-
-.logo-pic{
-  width:150px;
-  margin-left:0;
-}
-
-/*.hamburger-icon{
-  width:20px;
-  height:20px;
-  display: flex;
-}*/
-
-
-body{
-  width:100%;
-  align-items: center;
-  position: relative;
-}
-
-.home-pic{
-  width:100%;
-  margin-top:90px;
-  margin-bottom:100px;
-}
-
-.btn-container{
-  display:none;
-}
-
-.about-pic{
-  width:90%;
-  position: absolute;
-  margin-left:1rem;
-}
-
-.reviews-container{
-  width:100%;
-  position: absolute;
-  margin-top: 3300px;
-  box-sizing: border-box;
-}
-
-.recommendations-container{
-  width:70%;
-  margin-top:1rem;
-  flex-wrap: wrap;
-
-}
-
-footer{
-  width:90%;
-}
-
-#latest-books-reviews{
-  margin-top:0;
-  position:absolute;
-  box-sizing: border-box;
-  width:80%;
-  margin-left:1rem;
-  margin-right:1rem;
-}
-#recommendations{
-  margin-top:3900px;
-  position: relative;
-}
-
-#about{
-  margin-top:400px;
-  position: relative;
-}
-
-#contact{
- margin-top:80px;
-}
-
-h2{
-  font-size:20px;
-  margin-left: 0;
-  top: 0;
-  position: absolute;
-  left:2rem;
-  font-weight: 600;
-}
-
-
-.Rh2{
-  font-size:20px;
-  margin-left: 0;
-  top: 0;
-  position: absolute;
-  left: 2rem;
-  margin-bottom:3rem;
-  font-weight: 600;
-}
-
-.contact-container{
-  width:90%;
-}
-
-.first-recommendation-cover{
-  height:200px;
-  width: 200px;
-}
-
-.Rh3{
-  font-size:20px;
-  margin-left:5.5rem;
-  top: 0;
-  position: absolute;
-  left: 2rem;
-  font-weight: 600;
-}
-
-
-.contact-container{
-  text-align: center;
-}
-
-h3{
-  font-size:45px;
-  font-family: 'PT-serif' sans-serif;
-  font-weight:600;
-  color: white;
-}
-
-.footer-nav a{
-  font-size:10px;
-}
-
-.footer-nav{
-  text-align:center;
-}
-
-#contact-footer p{
-  font-size:10px;
-}
-
-.contact-email-address a{
-  font-size:20px;
-}
-
-#contact-footer{
-  width:100%;
-  box-sizing: border-box;
-}
-
-footer{
-  width:100%;
-}
-
-#contact{
-  width:100%;
-}
-
-.menu-links{
-  height:100px;
-}
-
-.menu-links a{
-  font-size:9px;
-}
-
-
-}
-
-@media screen and (max-width:375px){
-  #desktop-nav{
-    display: none;
-}
-
-#hamburger-nav{
-  display:flex;
-  gap:9rem;
-  position: relative;
-  margin-left:0;
-}
-
-.logo-pic{
-width:140px;
-margin-left:0;
-}
-
-/*.hamburger-icon{
-width:15px;
-height:15px;
-display: flex;
-}*/
-
-
-body{
-width:100%;
-align-items: center;
-position: relative;
-}
-
-.home-pic{
-  width:100%;
-  margin-top:80px;
-  margin-bottom:100px;
-}
-
-.btn-container{
-  display:none;
-}
-
-.about-pic{
-  width:80%;
-  position: absolute;
-  margin-left:1rem;
-}
-
-.reviews-container{
-  width:100%;
-  position: absolute;
-  margin-top: 3300px;
-  box-sizing: border-box;
-}
-
-.recommendations-container{
-  width:70%;
-  margin-top:1rem;
-  flex-wrap: wrap;
-
-}
-
-footer{
-  width:90%;
-}
-
-#latest-books-reviews{
-  margin-top:0;
-  position:absolute;
-  box-sizing: border-box;
-  width:80%;
-  margin-left:1rem;
-  margin-right:1rem;
-}
-
-#recommendations{
-  margin-top:3900px;
-  position: relative;
-}
-
-#about{
-  margin-top:600px;
-  position: relative;
-}
-
-#contact{
- margin-top:80px;
-}
-
-h2{
-  font-size:20px;
-  margin-left: 0;
-  top: 0;
-  position: absolute;
-  left:4.5rem;
-  font-weight: 600;
-}
-
-
-.Rh2{
-  font-size:20px;
-  margin-left: 0;
-  top: 0;
-  position: absolute;
-  left: 2rem;
-  margin-bottom:3rem;
-  font-weight: 600;
-}
-
-.contact-container{
-  width:90%;
-}
-
-.first-recommendation-cover{
-  height:200px;
-  width: 200px;
-}
-
-.Rh3{
-  font-size:20px;
-  margin-left:5.5rem;
-  top: 0;
-  position: absolute;
-  left: 3.2rem;
-  font-weight: 600;
-}
-
-.contact-container{
-  text-align: center;
-}
-
-h3{
-  font-size:45px;
-  font-family: 'PT-serif' sans-serif;
-  font-weight:600;
-  color: white;
-}
-
-.footer-nav a{
-  font-size:10px;
-}
-
-.footer-nav{
-  text-align:center;
-}
-
-#contact-footer p{
-  font-size:10px;
-}
-
-.contact-email-address a{
-  font-size:20px;
-}
-
-#contact-footer{
-  width:100%;
-  box-sizing: border-box;
-}
-
-footer{
-  width:100%;
-}
-
-#contact{
-  width:100%;
-}
-
-.menu-links{
-  height:250px;
-}
-
-.menu-links a{
-  font-size:9px;
-  padding:2.5px 1rem;
-}
-
-
-}
-
-@media screen and (max-width:414px){
-  #desktop-nav{
-    display: none;
-}
-
-#hamburger-nav{
-  display:flex;
-  gap:9rem;
-  /*position: absolute;*/
-  margin-left:0;
-}
-
-.logo-pic{
-width:140px;
-margin-left:0;
-}
-
-/*.hamburger-icon{
-width:15px;
-height:15px;
-display: flex;
-}*/
-
-
-body{
-width:100%;
-align-items: center;
-position: relative;
-}
-
-.home-pic{
-  width:100%;
-  margin-top:80px;
-  margin-bottom:100px;
-}
-
-.btn-container{
-  display:none;
-}
-
-.about-pic{
-  width:80%;
-  position: absolute;
-  margin-left:1rem;
-}
-
-.reviews-container{
-  width:100%;
-  position: absolute;
-  margin-top: 3300px;
-  box-sizing: border-box;
-}
-
-.recommendations-container{
-  width:70%;
-  margin-top:1rem;
-  flex-wrap: wrap;
-
-}
-
-footer{
-  width:90%;
-}
-
-#latest-books-reviews{
-  margin-top:0;
-  position:absolute;
-  box-sizing: border-box;
-  width:80%;
-  margin-left:1rem;
-  margin-right:1rem;
-}
-
-#recommendations{
-  margin-top:3900px;
-  position: relative;
-}
-
-#about{
-  margin-top:600px;
-  position: relative;
-}
-
-#contact{
- margin-top:80px;
-}
-
-h2{
-  font-size:20px;
-  margin-left: 0;
-  top: 0;
-  position: absolute;
-  left:4.5rem;
-  font-weight: 600;
-}
-
-
-.Rh2{
-  font-size:20px;
-  margin-left: 0;
-  top: 0;
-  position: absolute;
-  left: 2rem;
-  margin-bottom:3rem;
-  font-weight: 600;
-}
-
-.contact-container{
-  width:90%;
-}
-
-.first-recommendation-cover{
-  height:200px;
-  width: 200px;
-}
-
-.Rh3{
-  font-size:20px;
-  margin-left:5.5rem;
-  top: 0;
-  position: absolute;
-  left: 3.2rem;
-  font-weight: 600;
-}
-
-.contact-container{
-  text-align: center;
-}
-
-h3{
-  font-size:45px;
-  font-family: 'PT-serif' sans-serif;
-  font-weight:600;
-  color: white;
-}
-
-.footer-nav a{
-  font-size:10px;
-}
-
-.footer-nav{
-  text-align:center;
-}
-
-#contact-footer p{
-  font-size:10px;
-}
-
-.contact-email-address a{
-  font-size:20px;
-}
-
-#contact-footer{
-  width:100%;
-  box-sizing: border-box;
-}
-
-footer{
-  width:100%;
-}
-
-#contact{
-  width:100%;
-}
-
-.menu-links{
-  height:100px;
-}
-
-.menu-links a{
-  font-size:9px;
-}
-}
-
-@media screen and (max-width:430px){
-  #desktop-nav{
-    display: none;
-}
-
-#hamburger-nav{
-  display:flex;
-  gap:9rem;
-  /*position: absolute;*/
-  margin-left:0;
-}
-
-.logo-pic{
-width:140px;
-margin-left:0;
-}
-
-/*.hamburger-icon{
-width:15px;
-height:15px;
-display: flex;
-}*/
-
-
-body{
-width:90%;
-align-items: center;
-position: relative;
-}
-
-.home-pic{
-  width:100%;
-  margin-top:80px;
-  margin-bottom:100px;
-}
-
-.btn-container{
-  display:none;
-}
-
-.about-pic{
-  width:80%;
-  position: absolute;
-  margin-left:1rem;
-}
-
-.reviews-container{
-  width:100%;
-  position: absolute;
-  margin-top: 3300px;
-  box-sizing: border-box;
-}
-
-.recommendations-container{
-  width:70%;
-  margin-top:1rem;
-  flex-wrap: wrap;
-
-}
-
-footer{
-  width:90%;
-}
-
-#latest-books-reviews{
-  margin-top:0;
-  position:absolute;
-  box-sizing: border-box;
-  width:80%;
-  margin-left:1rem;
-  margin-right:1rem;
-}
-
-#recommendations{
-  margin-top:3900px;
-  position: relative;
-}
-
-#about{
-  margin-top:700px;
-  position: relative;
-}
-
-#contact{
- margin-top:80px;
-}
-
-h2{
-  font-size:20px;
-  margin-left: 0;
-  top: 0;
-  position: absolute;
-  left:4.5rem;
-  font-weight: 600;
-}
-
-
-.Rh2{
-  font-size:20px;
-  margin-left: 0;
-  top: 0;
-  position: absolute;
-  left: 2rem;
-  margin-bottom:3rem;
-  font-weight: 600;
-}
-
-.contact-container{
-  width:90%;
-}
-
-.first-recommendation-cover{
-  height:200px;
-  width: 200px;
-}
-
-.Rh3{
-  font-size:20px;
-  margin-left:5.5rem;
-  position: absolute;
-  left: 3.2rem;
-  font-weight: 600;
-}
-
-.contact-container{
-  text-align: center;
-}
-
-h3{
-  font-size:45px;
-  font-family: 'PT-serif' sans-serif;
-  font-weight:600;
-  color: white;
-}
-
-.footer-nav a{
-  font-size:10px;
-}
-
-.footer-nav{
-  text-align:center;
-}
-
-#contact-footer p{
-  font-size:10px;
-}
-
-.contact-email-address a{
-  font-size:20px;
-}
-
-#contact-footer{
-  width:100%;
-  box-sizing: border-box;
-}
-
-footer{
-  width:100%;
-}
-
-#contact{
-  width:100%;
-}
-
-.menu-links{
-  height:100px;
-}
-
-.menu-links a{
-  font-size:9px;
-}
-}
