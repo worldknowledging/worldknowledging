@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WorldKowledging</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>worldknowledging</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
 
-  <!-- Meta Description: A compelling summary with target keywords -->
+    <!-- Meta Description: A compelling summary with target keywords -->
   <meta name="description" content="WorldKowledging offers insightful reviews and recommendations on books, including educational, financial, and parenting tips. Discover your next great read today!">
 
   <!-- Meta Keywords (optional but useful) -->
@@ -21,294 +24,178 @@
   <meta property="og:url" content="https://www.worldkowledging.com/">
   <meta property="og:type" content="blog">
 
-  <!-- Twitter Card Meta Tags for Better Sharing on Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="WorldKowledging - Top Books, Reviews, and Knowledge Insights">
-  <meta name="twitter:description" content="Discover insightful book reviews and recommendations on WorldKowledging. Find educational, financial, and parenting books along with valuable study tips.">
-  <meta name="twitter:image" content="https://www.worldkowledging.com/images/twitter-card.jpg">
-  <meta name="twitter:url" content="https://www.worldkowledging.com/">
+   <!-- Robots Meta Tag: Control search engine indexing -->
+   <meta name="robots" content="index, follow">
 
-  <!-- Favicon: Small icon displayed in the browser tab -->
-  <link rel="icon" href="https://www.worldkowledging.com/favicon.ico" type="image/x-icon">
-
-  <!-- Stylesheet Link: Link to your CSS file -->
-  <link rel="stylesheet" href="reviews.css">
-  <link rel="stylesheet" href="mediaqueriesr.css">
-
-  <!-- Robots Meta Tag: Control search engine indexing -->
-  <meta name="robots" content="index, follow">
-
-  <!-- Structured Data (Optional): Use JSON-LD for rich snippets -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "WorldKowledging",
-    "description": "A blog offering book reviews, recommendations, and knowledge on educational, financial, and parenting topics.",
-    "url": "https://worldknowledging.github.io/worldknowledging/"
-  }
-  </script>
-</head>
-<body>
-    <nav>
-
-
-    <div class="nav-links">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li class="books-menu">
-            <a href="#books" id="books-toggle">BOOKS</a>
+   <!-- Structured Data (Optional): Use JSON-LD for rich snippets -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "Blog",
+     "name": "WorldKowledging",
+     "description": "A blog offering book reviews, recommendations, and knowledge on educational, financial, and parenting topics.",
+     "url": "https://worldknowledging.github.io/worldknowledging/"
+   }
+   </script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">WorldKnowledging</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li class="books-menu">
+            <a href="#books" id="books-toggle">Books</a>
             <ul class="books-submenu" id="books-submenu">
               <li><a href="reviews.html">Reviews</a></li>
               <li><a href="recommendations.html">Recommendations</a></li>
             </ul>
           </li>
-          <li><a href="tips.html">TIPS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        <!-- Add more navigation items as needed -->
-
-    </div>
+          <li><a href="tips.html">Tips</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-
-  
-
-    
+    <nav id="hamburger-nav">
+      <div class="logo">WorldKnowledging</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="reviews.html" onclick="toggleMenu()">Reviews</a></li>
+          <li><a href="recommendations.html" onclick="toggleMenu()">Recommendations</a></li>
+          <li><a href="tips.html" onclick="toggleMenu()">Tips</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
     <section id="home">
-        <div class="homesection">
-            <div class="container">
-                <h1>Dive into knowledge</h1>
-                <p class="subtitle">Find meaning in life</p>
-                <p class="description">Welcome to Worldknowledging, where every page is a gateway to new ideas and timeless wisdom.</p>
-            </div>
-            <button class="btn-container"><a href="#about">ABOUT</a></button>
-        </div>
-    </section>
-
-    <section id="latest-reviews">
-        
-        <div id="reviews-list">
-                <h1>latest Book Reviews</h1>
-                <div class="reviews-container">
-                    <!-- Repeat this block for each placeholder -->
-                    <!-- Example placeholder with category attribute -->
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Non-Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Non-Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Non-Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Non-Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Non-Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Non-Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Non-Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Non-Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Non-Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Fiction book review text...</div>
-        </div>
-    </div>
-    
-    <div class="review-placeholder" >
-        <div class="placeholder-image"><img src="./soul by olivia wilson book cover.jpg" alt="soul book cover"/ class="first-review-cover"></div>
-        <div class="placeholder-content">
-            <div class="placeholder-title">Soul</div>
-            <div class="placeholder-text">Non-Fiction book review text...</div>
-        </div>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-                    <!-- Repeat until you have ten placeholders -->
-    </div>
-    </div>
-    
-    
-      </section>
-
-      <section id="recommendations">
-        <h2 class="Rh2">Book Recommendations</h2>
-        <div class="recommendations-container">
-            <div class="recommendation">
-                <div><img src="./Best 10 Romance books of 2024 poster.jpg" alt="soul book cover"/ class="first-recommandation-cover"></div>
-                <div class="recommendation-title">Best 10 romance books of 2024</div>
-            </div>
-            <div class="recommendation">
-                <div><img src="./Best 10 Romance books of 2024 poster.jpg" alt="soul book cover"/ class="first-recommandation-cover"></div>
-                <div class="recommendation-title">Best financial books for investors</div>
-            </div>
-            <div class="recommendation">
-                <div><img src="./Best 10 Romance books of 2024 poster.jpg" alt="soul book cover"/ class="first-recommandation-cover"></div>
-                <div class="recommendation-title">Best Parenting books</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about">
-            <span class="Rh1">About</span>
-        <div class="about-section">
-            <div class="pic-container">
-                <img alt="books in a shelf picture" src="./about.jpg"/>
-            </div>
-            <div class="about-container">
-                <p class="subtitle">Our Mission</p>
-                <p class="description">Our mission is to awaken your inner desire for learning and help you find meaning in life. </p>
-                <p class="description"> What if we dedicated the same commitment to self-development </p>
-                <p class="description">and personal growth as we do to our daily education? The rewards could be profound!</p>
-            </div>
-         </div>
+      <div class="section__pic-container">
+        <img src="./homepicture.jpg" alt="worldknowledging home picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Find meaning in life</p>
+        <h1 class="title">Dive into knowledge</h1>
+        <p class="section__text__p2">Welcome to worldknowledging</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2"><a href="#about">About</a>
+          </button>
           
-       
-       
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <h1 class="title">About</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./about.jpg"
+            alt="About picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <h2>Our Mission</h2>
+            <p>
+             Our mission is to awaken your inner desire for learning and help you find meaning in life . What if we didicated the same commimtement to self-developement and personal growth as we do to our daily education ? The rewards could be profound!
+            </p>
+          </div>
+        </div>
+      </div>
+  
+    </section>
 
+    <section id="latestreviews">
+      <h1 class="title">Latest books reviews</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+           <img src="./soul by olivia wilson book cover.jpg" alt="book review cover" class="review-pic"/>
+           <h2>Soul</h2>
+          </div>
+          <div class="details-container">
+            <img src="./soul by olivia wilson book cover.jpg" alt="book review cover" class="review-pic"/>
+            <h2>Soul</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="recommendations">
+      <h1 class="title">Books Recommendations</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Best 10 Romance books of 2024 poster.jpg"
+                alt="Recommendations blog post"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">10 best romance books</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Best 10 Romance books of 2024 poster.jpg"
+                alt="Recommendations blog post"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">10 best romance books</h2>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Best 10 Romance books of 2024 poster.jpg"
+                alt="Recommendations blog post"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">10 best romance books</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./email-icon.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:worldknowledging@gmail.com">worldknowledging@gmail.com</a></p>
+        </div>
+      </div>
     </section>
 
 
-      <footer id="contact-footer">
-        <div class="footer-nav">
-            <a href="index.html">HOME</a>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="tips.html">Tips</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
-        <p>copyright &#169; 2024 WorldKowledging. All rights Reserved.</p>
+      </nav>
+      <p>Copyright &#169; 2023 worldknowledging. All Rights Reserved.</p>
     </footer>
-      <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
