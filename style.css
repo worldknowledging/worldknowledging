@@ -284,6 +284,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  display: flex;
 }
 .details-container {
   padding: 1.5rem;
