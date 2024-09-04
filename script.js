@@ -51,12 +51,12 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-/*hamburger-nav*/
-function toggleMenu(){
+/*hamburgermenu*/
+
+ function toggleMenu(){
   const menu= document.querySelector(".menu-links");
   const icon= document.querySelector(".hamburger-icon ");
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 
 }
-

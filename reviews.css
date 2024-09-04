@@ -1,33 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 body {
     margin: 0;
     padding: 0;
   }
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Transition*/
+li,.btn{
+    transition:all 30ms ease;
+}
   
-  nav {
+  nav{
     display: flex;
     justify-content: center;
     padding: 1rem;
     background: black;
     height: 10vh;
     align-items: center;
-    justify-content: center;
-  }
+    gap:2rem;
   
-  nav a {
+  }
+
+
+
+ .nav-links{
+    list-style: none;
+    gap:2rem;
+    font-size:15px;
     color: white;
+    flex-direction: row;
+    display: flex;
+}
+
+li{
+    text-decoration-color:black;
+    color: white;
+}
+
+li:hover{
+    color:#003366;
+    text-decoration:none;
+    text-underline-offset:1rem;
+    text-decoration-color:rgb(181,181,181);
+}
+
+
+a{
+    text-decoration-color:black;
+    color: white;
+}
+
+a:hover{
+    color:#003366;
+    text-decoration:none;
+    text-underline-offset:1rem;
+    text-decoration-color:rgb(181,181,181);
+}
+
+
+
+  .books-menu {
+    position: relative;
+  }
+  .books-submenu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    list-style: none;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 100%;
+    left: 0;
+    z-index: 10;
+  }
+  
+  .books-submenu li {
+    margin: 0;
+  }
+  
+  .books-submenu a {
+    color: #003366;
     text-decoration: none;
-    margin: 0 1rem;
-    font-family: 'Libre Baskerville' sans-serif;
+    display: block;
+    padding: 0.5rem;
+    transition: all ease 0.3s;
   }
   
-  nav a:hover {
-    text-decoration: underline;
-    text-decoration-color: black;
+  .books-submenu a:hover {
+    background: #f0f0f0;
   }
+
   
-  #reviews {
-    padding: 2rem;
-  }
+
+/*sections*/
+  section{
+    height:fit-content;
+    padding-top:4vh;
+    box-sizing:border-box;
+    min-height:fit-content;
+    margin-bottom: 10rem;
+}
+
+
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    flex-direction: flex-start;
+    display: flex;
+    font-weight: 300;
+}
+
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .subtitle {
+        font-size: 1.2em;
+    }
+
+    .description {
+        font-size: 0.9em;
+    }
+}
+
+
+
   
   .category-filters {
     display: flex;
@@ -53,6 +160,8 @@ body {
   }
 
 
+
+
  /*Reviews Container Styling */
 .reviews-container {
     display: grid;
@@ -66,7 +175,7 @@ body {
 
 #reviews-list{
     align-items: center;
-    justify-content: center;
+ 
 }
 
 
@@ -108,13 +217,14 @@ body {
     border-radius: 4px;
 }
 
-h1{
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem ;
-    font-size: 70px;
+.Rh1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    flex-direction: flex-start;
+    display: flex;
     font-weight: 300;
 }
+
 
 /*footer*/
 #contact-footer {
