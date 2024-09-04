@@ -11,6 +11,10 @@ index.html: Main HTML file with the structure of the website, including navigati
 style.css: Primary stylesheet for design and layout.
 mediaqueries.css: Stylesheet for responsive design adjustments.
 script.js: JavaScript file for interactive elements, such as the hamburger menu.
+reviews.html:  HTML file for reviews of books page.
+recommendations.html:  HTML file for recommendations of books page.
+tips.html:  HTML file for reviews of books page.
+reviews.css:  css file for reviews, recommendations and tips of books page.
 Installation
 Clone the Repository: Open a terminal and run the following command:
 
@@ -42,3 +46,4 @@ This project is licensed under the MIT License.
 
 Contact
 For any inquiries or feedback, please contact us at worldknowledging@gmail.com.
+URL OF THE BLOG : worldknowledging.github.io
