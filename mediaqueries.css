@@ -64,6 +64,7 @@
 
   .post-pic{
     width:70%;
+    padding:50px;
   }
 
  /* .in-post-ad{
@@ -144,7 +145,7 @@
   }
 
   nav{
-    font-size: 0.5rem;
+    font-size: 9px;
   }
  
 }
