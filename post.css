@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&family=Playwrite+AU+SA:wght@100..400&display=swap');
 body {
     font-family: 'Arial', sans-serif;
     color: #003366;
@@ -25,6 +27,10 @@ h1, h2, h3 {
     padding: 10px 0;
     font-family: "Old Standard TT", serif;
     font-style: normal;
+}
+
+h1{
+    cursor: pointer;
 }
 
 .content-wrapper {
@@ -107,7 +113,8 @@ main {
 
 
 .post-pic{
-    width:700px;
+    width:500px;
+    height: fit-content;
 }
 
 .table-of-contents  {
@@ -116,6 +123,11 @@ display: flex;
 align-items: flex-start;
 
 }
+
+.table-of-contents a {
+
+    font-size:15px;
+    }
 
 .introduction,#introduction{
     display: flex;
@@ -133,3 +145,63 @@ p{
     #video-section{
     margin-bottom: 200px;
 }
+
+/*additional customized styling*/
+.quote{
+  height:fit-content;
+  background-color: antiquewhite;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  color: black;
+  font-weight: 600;
+  font-size: 20px;
+  align-items: center;
+  font-family: "IM Fell DW Pica", serif;
+}
+
+.introduction span{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width:fit-content;
+}
+
+#second-section quote{
+    margin-top:2rem ;
+    margin-bottom: 1rem;
+}
+
+/* Add this CSS for the buttons */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.store-button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 15px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 16px;
+}
+
+.store-button:hover {
+    background-color: #d4af37;
+    color: black;
+}
+
+.button-container a:hover{
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: none;
+  }
+
+  header h1{
+    cursor: pointer;
+  }
