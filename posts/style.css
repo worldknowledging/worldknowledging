@@ -55,17 +55,19 @@ a {
   color: black;
   text-decoration: none;
   text-decoration-color: white;
+  cursor: pointer;
 }
 
 a:hover {
   color: #003366;
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .logo:hover {
@@ -452,6 +454,8 @@ main section{
   margin: 0;
   height: fit-content;
 }
+
+
 
 /*books menu*/
 .books-menu {
