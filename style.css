@@ -164,6 +164,7 @@ section {
 
 .section-container {
   display: flex;
+  gap:15rem;
 }
 
 /* home SECTION */
@@ -284,6 +285,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  width:450px;
 }
 .details-container {
   padding: 1.5rem;
