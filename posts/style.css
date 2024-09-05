@@ -55,17 +55,19 @@ a {
   color: black;
   text-decoration: none;
   text-decoration-color: white;
+  cursor: pointer;
 }
 
 a:hover {
   color: #003366;
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .logo:hover {
@@ -285,6 +287,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  width:540px;
 }
 .details-container {
   padding: 1.5rem;
@@ -298,7 +301,7 @@ section {
 }
 
 .section-container {
-  gap:25rem;
+  gap:15rem;
   height: 80%;
 }
 
@@ -452,6 +455,8 @@ main section{
   margin: 0;
   height: fit-content;
 }
+
+
 
 /*books menu*/
 .books-menu {
