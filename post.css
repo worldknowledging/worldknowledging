@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=PT+Sans+Narrow:wght@400;700&display=swap');
+body {
+    font-family: 'Arial', sans-serif;
+    color: #003366;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.post-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    color: #003366;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: "Old Standard TT", serif;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 10px 0;
+    font-family: "Old Standard TT", serif;
+    font-style: normal;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main {
+    flex: 3;
+    padding: 20px;
+    margin-right: 10px;
+}
+
+.sidebar-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.table-of-contents ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.table-of-contents ul li {
+    margin-bottom: 10px;
+}
+
+.table-of-contents ul li a {
+    text-decoration: none;
+    color: #003366;
+}
+
+.table-of-contents ul li a:hover {
+    text-decoration: none;
+}
+
+.media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.pinterest-pin {
+    padding: 10px;
+    max-width:60%;
+}
+
+.youtube-video {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.pinterest-pin img {
+    max-width: 100%;
+    height: auto;
+}
+
+.in-post-ad {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #d4af37;
+    display: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .sidebar-right {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+
+.post-pic{
+    width:700px;
+}
+
+.table-of-contents  {
+flex-direction: column;
+display: flex;
+align-items: flex-start;
+
+}
+
+.introduction,#introduction{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+p{
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+
+    #video-section{
+    margin-bottom: 200px;
+}

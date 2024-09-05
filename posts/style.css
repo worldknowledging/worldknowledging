@@ -164,6 +164,7 @@ section {
 
 .section-container {
   display: flex;
+  gap:15rem;
 }
 
 /* home SECTION */
