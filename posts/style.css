@@ -287,6 +287,7 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  width:540px;
 }
 .details-container {
   padding: 1.5rem;
@@ -300,7 +301,7 @@ section {
 }
 
 .section-container {
-  gap:25rem;
+  gap:15rem;
   height: 80%;
 }
 
