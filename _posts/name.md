@@ -17,7 +17,7 @@ categories: [fiction, romance]
 “**I don't know if I can fix your broken heart, but you can take mine because it's already yours.**” - Stephanie Garber  
 Stephanie Garber returns with *Once Upon a Broken Heart*, a spin-off series from her beloved *Caraval* books. You don’t have to read the *Caraval* series to dive into this enchanting world, but fans will enjoy familiar characters.
 
-![Book Cover Picture](../posts/once-upon-a-broken-heart-book-cover.jpg)
+![Book Cover Picture](../posts/once-upon-a-broken-heart.png)
 
 ## Table of Contents
 - [Introduction](#introduction)
