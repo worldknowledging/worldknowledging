@@ -152,3 +152,25 @@
  
 }
 
+/*tof content*/
+.table-of-contents {
+  position: relative;
+  height:45px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.table-of-contents.open {
+  height:fit-content; /* Adjust based on your content */
+}
+
+.table-of-contents h2 {
+  margin: 0;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 1px solid;
+  font-size: 1.5rem;
+}

@@ -60,3 +60,20 @@ document.addEventListener('DOMContentLoaded', () => {
   icon.classList.toggle("open");
 
 }
+
+/*table of contents*/
+document.addEventListener('DOMContentLoaded', function() {
+  const toc = document.getElementById('toc');
+  const tocHeader = toc.querySelector('h2');
+
+  tocHeader.addEventListener('click', function() {
+      toc.classList.toggle('open');
+  });
+
+  document.addEventListener('click', function(event) {
+      if (!toc.contains(event.target) && toc.classList.contains('open')) {
+          toc.classList.remove('open');
+      }
+  });
+});
+
