@@ -98,6 +98,10 @@ main {
     display: none;
 }
 
+#third-section{
+    margin-top: 450px;
+}
+
 
 
 @media (max-width: 768px) {
@@ -204,4 +208,8 @@ header a:hover {
 
   header h1{
     cursor: pointer;
+  }
+
+  p a{
+    color:#d4af37;
   }

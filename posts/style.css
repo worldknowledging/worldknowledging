@@ -495,3 +495,6 @@ main section{
   text-decoration: none;
 }
 
+#recommendations{
+  display:none;
+}
