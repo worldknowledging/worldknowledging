@@ -56,6 +56,7 @@ a {
   text-decoration: none;
   text-decoration-color: white;
   cursor: pointer;
+ 
 }
 
 a:hover {
@@ -498,3 +499,4 @@ main section{
 #recommendations{
   display:none;
 }
+

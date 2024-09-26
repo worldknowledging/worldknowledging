@@ -23,7 +23,7 @@ header {
 }
 
 h1, h2, h3 {
-    margin: 0;
+    margin-top:12px;
     padding: 10px 0;
     font-family: "Old Standard TT", serif;
     font-style: normal;
@@ -143,6 +143,7 @@ p{
     font-family: "PT Sans Narrow", sans-serif;
     font-size: 20px;
     color: black;
+    margin-bottom: 12px;
 }
 
 
@@ -185,12 +186,15 @@ p{
 .store-button {
     background-color: #003366;
     color: white;
-    padding: 10px 15px;
+    padding: 7px 15px;
     margin-right: 10px;
     text-decoration: none;
     border-radius: 5px;
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 16px;
+    margin-top: 2px;
+    position: absolute;
+    align-items: center;
 }
 
 .store-button:hover {
@@ -217,3 +221,92 @@ header a:hover {
   i{
     color: black;
   }
+
+/*other posts section*/
+#other-posts {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+}
+
+#other-posts h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.other-posts-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.other-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Default to full width for small screens */
+    max-width: 300px; /* Limit the width of each post */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.other-post:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.other-post-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.other-post-info {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.other-post-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.other-post-info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.post-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.post-link:hover {
+    background-color: #e64a19;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .other-post {
+        width: 48%; /* Two items per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .other-post {
+        width: 100%; /* One item per row on mobile */
+    }
+
+    #other-posts h2 {
+        font-size: 1.5rem; /* Smaller title on mobile */
+    }
+}
