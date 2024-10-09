@@ -500,3 +500,7 @@ main section{
   display:none;
 }
 
+.notseen{
+  color:gray;
+}
+
